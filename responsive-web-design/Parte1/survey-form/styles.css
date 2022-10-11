@@ -1,0 +1,55 @@
+body{
+    background-image: url(https://wallpaperaccess.com/full/1715114.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h1, p{
+    text-align: center;
+}
+
+form{
+    width: 80%;
+    background: linear-gradient(360deg, #d81a49b6, #246da8c4, #1c84c9bb);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 3%;
+}
+
+fieldset{
+    border-radius: 3%;
+    border-color: rgb(221, 142, 22);
+    border-width: 7px;
+    width: auto;
+}
+input{
+    align-items: center;
+    display: block;
+    color:rgb(23, 48, 70);
+    font-size:medium; 
+  }
+
+label{
+    color: rgb(255, 255, 255);
+  }
+
+.opc{
+    display: inline-block;
+}
+
+hr{
+    background-color: rgba(255, 255, 255, 0.911);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.911);
+    border-radius: 2%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    text-align: center;
+    width: 25px; 
+    accent-color: rgb(8, 240, 190);
+}
+
+

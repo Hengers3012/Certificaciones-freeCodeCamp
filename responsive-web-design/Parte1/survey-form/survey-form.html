@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This form will receive the answers of the users interested in doing it.</p>
+
+        <form action="submit" id="survey-form">
+            <fieldset>
+                <legend>Please select your preferred contact method:</legend>
+                <div>
+                    <label id="name-label">Enter your Firs Name:<input type="text" id="name" placeholder="Bob"
+                            required></label>
+                    <label id="second-name-label">Enter your Last Name:<input type="text" id="second-name"
+                            placeholder="Singer" required></label>
+                    <label id="email-label">Enter your Email Address:<input type="email" id="email"
+                            placeholder="example@example.com" required></label>
+                    <label id="age-label">Enter your Age (Opcional):<input type="number" id="Age" min="10" max="99"
+                            placeholder="18" required></label>
+                    <label id="number-label">Enter your Phone Number (Opcional):<input type="number" id="number"
+                            min="1111111111" max="9999999999" placeholder="1111111111" required></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Please select your preferred contact method:</legend>
+                <div>
+                    <label id="assessment-label"> How much do you agree with the delivery of personal information in the
+                        online forms?
+                        <select name="assessment" id="dropdown">
+                            <option value="">(Select an option)</option>
+                            <option value="1">Not agree</option>
+                            <option value="2">In agreement</option>
+                            <option value="2">Strongly agree</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select your gender and hobbies</legend>
+                <div>
+                    <input type="radio" name="sex" value="male" class="opc"> Male
+                    <input type="radio" name="sex" value="female" class="opc"> Female
+                    <hr>
+                    <input type="checkbox" value="0" class="opc">hols
+                    <input type="checkbox" value="1" class="opc">hola
+                    <input type="checkbox" value="2" class="opc">hole
+                    <input type="checkbox" value="3" class="opc">holr
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Please select your preferred contact method:</legend>
+                <div>
+                    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <input id="submit" type="submit" value="Submit Survey">
+
+        </form>
+    </div>
+</body>
+
+</html>
