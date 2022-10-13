@@ -1,14 +1,30 @@
-body{
+body {
     background-image: url(https://wallpaperaccess.com/full/1715114.jpg);
     font-family: sans-serif;
     padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1, p{
+h1,
+p {
+
     text-align: center;
+    font-style: unset;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
 }
 
-form{
+p {
+    font-size: large;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+form {
     width: 80%;
     background: linear-gradient(360deg, #d81a49b6, #246da8c4, #1c84c9bb);
     margin-left: auto;
@@ -18,38 +34,97 @@ form{
     border-radius: 3%;
 }
 
-fieldset{
+fieldset {
     border-radius: 3%;
-    border-color: rgb(221, 142, 22);
-    border-width: 7px;
+    border-color: rgb(255, 123, 0);
+    border-width: 3px;
     width: auto;
+    margin-top: 5px;
 }
-input{
+
+legend {
+    color: rgb(8, 240, 190);
+}
+
+input {
     align-items: center;
     display: block;
-    color:rgb(23, 48, 70);
-    font-size:medium; 
-  }
+    color: rgb(23, 48, 70);
+    font-size: medium;
+}
 
-label{
+#name,
+#name-label,
+#email,
+#email-label,
+#second-name,
+#second-name-label,
+#age,
+#age-label,
+#number,
+#number-label,
+#comments-label {
+    display: block;
+    min-width: 65%;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#dropdown {
+    display: block;
+    min-width: 30%;
+    margin-top: 3px;
+    margin: auto;
+}
+
+label {
     color: rgb(255, 255, 255);
-  }
+}
 
-.opc{
+.opc {
     display: inline-block;
 }
 
-hr{
+.opt {
+    color: rgb(255, 255, 255);
+}
+
+.selec {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
     background-color: rgba(255, 255, 255, 0.911);
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.911);
     border-radius: 2%;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
     text-align: center;
-    width: 25px; 
+    width: 25px;
     accent-color: rgb(8, 240, 190);
 }
 
+textarea {
+    width: 100%;
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+}
 
+#submit {
+    margin: auto;
+    margin-top: 7px;
+}
+
+#submit:hover {
+    color: darkcyan;
+}
+
+#submit:active {
+    color: rgb(8, 240, 190);
+    ;
+}

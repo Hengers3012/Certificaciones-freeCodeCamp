@@ -16,7 +16,7 @@
 
         <form action="submit" id="survey-form">
             <fieldset>
-                <legend>Please select your preferred contact method:</legend>
+                <legend>Enter your personal data:</legend>
                 <div>
                     <label id="name-label">Enter your Firs Name:<input type="text" id="name" placeholder="Bob"
                             required></label>
@@ -24,45 +24,43 @@
                             placeholder="Singer" required></label>
                     <label id="email-label">Enter your Email Address:<input type="email" id="email"
                             placeholder="example@example.com" required></label>
-                    <label id="age-label">Enter your Age (Opcional):<input type="number" id="Age" min="10" max="99"
+                    <label id="age-label">Enter your Age (Opcional):<input type="number" id="age" min="10" max="99"
                             placeholder="18" required></label>
                     <label id="number-label">Enter your Phone Number (Opcional):<input type="number" id="number"
                             min="1111111111" max="9999999999" placeholder="1111111111" required></label>
                 </div>
             </fieldset>
 
-            <fieldset>
-                <legend>Please select your preferred contact method:</legend>
-                <div>
-                    <label id="assessment-label"> How much do you agree with the delivery of personal information in the
-                        online forms?
-                        <select name="assessment" id="dropdown">
-                            <option value="">(Select an option)</option>
-                            <option value="1">Not agree</option>
-                            <option value="2">In agreement</option>
-                            <option value="2">Strongly agree</option>
-                        </select>
-                    </label>
-                </div>
-            </fieldset>
+            <div class="selec">
+                <label id="assessment-label"> How much do you agree with the delivery of personal information in the
+                    online forms?
+                    <select name="assessment" id="dropdown">
+                        <option value="">(Select an option)</option>
+                        <option value="1">Not agree</option>
+                        <option value="2">In agreement</option>
+                        <option value="2">Strongly agree</option>
+                    </select>
+                </label>
+            </div>
 
             <fieldset>
                 <legend>Select your gender and hobbies</legend>
-                <div>
+                <div class="opt">
                     <input type="radio" name="sex" value="male" class="opc"> Male
                     <input type="radio" name="sex" value="female" class="opc"> Female
                     <hr>
-                    <input type="checkbox" value="0" class="opc">hols
-                    <input type="checkbox" value="1" class="opc">hola
-                    <input type="checkbox" value="2" class="opc">hole
-                    <input type="checkbox" value="3" class="opc">holr
+                    <input type="checkbox" value="0" class="opc"> To travel
+                    <input type="checkbox" value="1" class="opc"> Music
+                    <input type="checkbox" value="2" class="opc"> Cinema
+                    <input type="checkbox" value="3" class="opc"> Books
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Please select your preferred contact method:</legend>
-                <div>
-                    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                <div class="bio">
+                    <textarea name="bio" id="bio" cols="30" rows="10"
+                        placeholder="Because I liked this poll..."></textarea>
                 </div>
             </fieldset>
 
